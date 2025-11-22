@@ -18,7 +18,8 @@ const PatientLogin = () => {
     try {
       // Call your backend API for patient login
       const response = await axios.post(
-        "http://localhost:5000/api/auth/patient/login", // Adjust if your endpoint differs
+       `${process.env.REACT_APP_API_URL}/api/auth/login`
+, // Adjust if your endpoint differs
         { email, password },
         { headers: { "Content-Type": "application/json" } }
       );
@@ -139,3 +140,4 @@ const PatientLogin = () => {
 };
 
 export default PatientLogin;
+
