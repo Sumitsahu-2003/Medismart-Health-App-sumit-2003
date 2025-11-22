@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const prescriptionController = require('../controllers/prescriptionController');
+const prescriptionController = require('../controllers/PrescriptionController');
 const authMiddleware = require('../middleware/authMiddleware');
 
 // Create new prescription
@@ -13,3 +13,4 @@ router.get('/', authMiddleware, prescriptionController.getPrescriptions);
 router.get('/:id', authMiddleware, prescriptionController.getPrescriptionById);
 
 module.exports = router;
+
