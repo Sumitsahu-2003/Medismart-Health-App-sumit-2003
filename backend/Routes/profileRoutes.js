@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const profileController = require('../controllers/profileController');
+const profileController = require('../controllers/ProfileController');
 const authMiddleware = require('../middleware/authMiddleware');
 
 // Get current user's profile
@@ -13,3 +13,4 @@ router.put('/me', authMiddleware, profileController.updateProfile);
 router.get('/:id', authMiddleware, profileController.getProfileById);
 
 module.exports = router;
+
