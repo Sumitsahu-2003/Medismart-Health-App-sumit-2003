@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const cartController = require('../controllers/cartController');
+const cartController = require('../controllers/CartControllers');
 const authMiddleware = require('../middleware/authMiddleware');
 
 // Get cart items
@@ -13,3 +13,4 @@ router.post('/add', authMiddleware, cartController.addToCart);
 router.delete('/remove/:medicineId', authMiddleware, cartController.removeFromCart);
 
 module.exports = router;
+
