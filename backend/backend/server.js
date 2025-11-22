@@ -12,12 +12,12 @@ const authRoutes = require('../Routes/AuthRoutes');
 const app = express();
 const profileRoutes = require('../Routes/profileRoutes');
 const healthRecordRoutes = require('../Routes/HealthRecordsRoutes');
-const appointmentRoutes = require('../Routes/appointmentRoutes');
-const prescriptionRoutes = require('../Routes/prescriptionRoutes');
-const labRoutes = require('../Routes/labRoutes');
-const communicationRoutes = require('../Routes/communicationRoutes');
-const billingRoutes = require('../Routes/billingRoutes');
-const analyticsRoutes = require('../Routes/analyticsRoutes');
+const appointmentRoutes = require('../Routes/AppointmentRoutes');
+const prescriptionRoutes = require('../Routes/PrescriptionRoutes');
+const labRoutes = require('../Routes/LabRoutes');
+const communicationRoutes = require('../Routes/CommunicationRoutes');
+const billingRoutes = require('../Routes/BillingRoutes');
+const analyticsRoutes = require('../Routes/AnalyticsRoutes');
 const uploadRoutes = require('../Routes/uploadRoute');
 const adminRoutes = require('../Routes/adminRoutes');
 // ✅ Declare the app
@@ -56,4 +56,5 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
 
