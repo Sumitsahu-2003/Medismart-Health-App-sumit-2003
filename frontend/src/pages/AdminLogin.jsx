@@ -20,7 +20,8 @@ const AdminLogin = () => {
      
       const response = await axios.post(
         
-        "http://localhost:5000/api/auth/admin/login",
+       `${process.env.REACT_APP_API_URL}/api/auth/admin/login`
+,
         
         { email, password },
         {
@@ -177,3 +178,4 @@ const AdminLogin = () => {
 };
 
 export default AdminLogin;
+
