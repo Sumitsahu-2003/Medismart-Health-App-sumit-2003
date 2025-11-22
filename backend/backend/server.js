@@ -18,7 +18,7 @@ const labRoutes = require('../Routes/LabRoutes');
 const communicationRoutes = require('../Routes/CommunicationRoutes');
 const billingRoutes = require('../Routes/BillingRoutes');
 const analyticsRoutes = require('../Routes/AnalyticsRoutes');
-const uploadRoutes = require('../Routes/uploadRoute');
+const uploadRoutes = require('../Routes/uploadroute');
 const adminRoutes = require('../Routes/adminRoutes');
 // ✅ Declare the app
 
@@ -56,5 +56,6 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
 
 
