@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const analyticsController = require('../controllers/analyticsController');
+const analyticsController = require('../controllers/AnalyticsController');
 const authMiddleware = require('../middleware/authMiddleware');
 
 // Get health analytics
@@ -10,3 +10,4 @@ router.get('/health', authMiddleware, analyticsController.getHealthAnalytics);
 router.get('/admin', authMiddleware, analyticsController.getAdminReports);
 
 module.exports = router;
+
