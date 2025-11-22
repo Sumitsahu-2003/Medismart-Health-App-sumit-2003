@@ -5,7 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const connectdb = require('../config/db');
 const errorHandlerMiddleware = require('../middleware/ErrorHandlerMiddleware');
-const loggingMiddleware = require('../middleware/loggingMiddleware');
+const loggingMiddleware = require('../middleware/LoggingMiddleware');
 
 // Import route files
 const authRoutes = require('../Routes/AuthRoutes');
@@ -56,3 +56,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
