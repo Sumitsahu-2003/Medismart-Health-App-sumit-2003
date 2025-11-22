@@ -18,11 +18,12 @@ const PatientLogin = () => {
     try {
       // Call your backend API for patient login
       const response = await axios.post(
-       `${process.env.REACT_APP_API_URL}/api/auth/login`
-, // Adjust if your endpoint differs
-        { email, password },
-        { headers: { "Content-Type": "application/json" } }
-      );
+  `${import.meta.env.VITE_API_BASE_URL}/api/auth/patient/login`,
+  { email, password },
+  { headers: { "Content-Type": "application/json" } }
+);
+
+    
 
       // Check if token is present
       if (!response.data.token) {
@@ -140,4 +141,5 @@ const PatientLogin = () => {
 };
 
 export default PatientLogin;
+
 
