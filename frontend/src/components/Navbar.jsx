@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.jpg";
+import Logo from "../assets/Logo.jpg";
 
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -96,3 +96,4 @@ export default function Navbar() {
     </nav>
   );
 }
+
