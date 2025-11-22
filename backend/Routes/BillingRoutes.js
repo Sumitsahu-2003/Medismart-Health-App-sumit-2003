@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const authMiddleware = require('../middleware/authMiddleware');
-const billingController = require('../controllers/billingController');
+const billingController = require('../controllers/BillingController');
 
 // Create a new billing record
 router.post('/', authMiddleware, billingController.createBilling);
@@ -20,3 +20,4 @@ router.put('/:id', authMiddleware, billingController.updateBilling);
 router.delete('/:id', authMiddleware, billingController.deleteBilling);
 
 module.exports = router;
+
