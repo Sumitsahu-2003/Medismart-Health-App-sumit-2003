@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import MedicineCard from '../../components/patient/MedicineCard';
-import CartButton from '../../components/patient/CartButton';
-import Cart from '../../components/patient/Cart';
+import MedicineCard from '../../components/Patient/MedicineCard';
+import CartButton from '../../components/Patient/CartButton';
+import Cart from '../../components/Patient/Cart';
 import paracetamolImg from '../../assets/paracetamol.jpg' ;
 import vitaminc from '../../assets/vitamin-c.jpg';
 import aspirin from '../../assets/aspirin.jpg';
@@ -59,3 +59,4 @@ const EMedicine = () => {
 };
 
 export default EMedicine;
+
