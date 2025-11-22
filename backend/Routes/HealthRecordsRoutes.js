@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const healthRecordController = require('../controllers/healthRecordController');
+const healthRecordController = require('../controllers/HealthRecordController');
 const authMiddleware = require('../middleware/authMiddleware');
 
 // Get all health records for the user
@@ -19,3 +19,4 @@ router.put('/:id', authMiddleware, healthRecordController.updateRecord);
 router.post('/:id/upload', authMiddleware, healthRecordController.uploadDocument);
 
 module.exports = router;
+
