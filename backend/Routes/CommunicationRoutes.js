@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const communicationController = require('../controllers/communicationController');
+const communicationController = require('../controllersCommunicationController');
 const authMiddleware = require('../middleware/authMiddleware');
 
 // Send a message
@@ -13,3 +13,4 @@ router.get('/messages', authMiddleware, communicationController.getMessages);
 router.put('/message/:id/read', authMiddleware, communicationController.markAsRead);
 
 module.exports = router;
+
