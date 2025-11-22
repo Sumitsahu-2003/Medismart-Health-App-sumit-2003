@@ -6,7 +6,8 @@ export default function HealthRecords() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_BASE_URL || "http://localhost:5000"}/api/health-records`)
+    fetch(`${import.meta.env.VITE_API_BASE_URL}/api/health-records`)
+
       .then(res => res.json())
       .then(data => {
         setRecords(data.data || data);
@@ -31,3 +32,4 @@ export default function HealthRecords() {
     </div>
   );
 }
+
