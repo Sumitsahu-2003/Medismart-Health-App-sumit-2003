@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import DoctorCategories from "./components/DoctorCategories";
-import AboutUs from "./components/Aboutus"; // Make sure the case matches your file
+import AboutUs from "./components/AboutUs"; // Make sure the case matches your file
 import PredictionCards from "./components/PredictionCards";
 import FAQ from "./components/FAQ";
 import HealthRecords from "./pages/HealthRecords";
