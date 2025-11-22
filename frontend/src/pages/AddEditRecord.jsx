@@ -10,7 +10,8 @@ export default function AddEditRecord() {
 
   useEffect(() => {
     if (id) {
-      fetch(`${import.meta.env.VITE_API_BASE_URL || "http://localhost:5000"}/api/health-records/${id}`)
+     fetch(`${import.meta.env.VITE_API_BASE_URL}/api/health-records/${id}`)
+
         .then(res => res.json())
         .then(record => {
           setTitle(record.title || "");
@@ -48,3 +49,4 @@ export default function AddEditRecord() {
     </div>
   );
 }
+
